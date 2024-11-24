@@ -15,12 +15,12 @@ export default function DashboardLayout({
         <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%]">
           <Link href="/" className="flex iitems-center justify-center lg:justify-start gap-2 p-4"> 
               <Image src="/logo.png" alt="" width={32} height={32}/>
-              <span className="hidden lg:block">SchoolLama</span>
+              <span className="hidden lg:block font-bold">SchoolLama</span>
           </Link>
           <Menu />
           </div>
         {/* RIGHT */}
-        <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] overflow-scroll">
+        <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] overflow-scroll flex flex-col">
           <Navbar/>
           {children}
         </div>
